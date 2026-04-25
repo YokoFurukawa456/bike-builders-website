@@ -1,0 +1,91 @@
+/* hero section */
+
+.hero-wrapper {
+    max-width:100%;
+    margin:0 auto;
+    padding-left: 80px;   
+    padding-right: 80px;
+    padding-bottom: 50px;
+
+}
+/* ── Hero photo mosaic ── */
+.hero-section .left {
+    width: 100%;
+}
+
+.photos {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 460px;
+    margin: 40px 0 0;
+}
+
+.photos img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+}
+
+.photo1,
+.photo2,
+.photo3,
+.photo4,
+.photo5 {
+    overflow: hidden;
+    position: absolute;
+    border-radius: 4px;
+}
+
+/* Large left photo */
+.photo1 { width: 38%; height: 100%; top: 0; left: 0; }
+
+/* Center-top photo */
+.photo2 { width: 28%; height: 60%; top: 0; left: 40%; }
+
+/* Center-bottom photo */
+.photo3 { width: 28%; height: 38%; bottom: 0; left: 40%; }
+
+/* Right-top photo */
+.photo4 { width: 29%; height: 48%; top: 0; right: 0; }
+
+/* Right-bottom photo */
+.photo5 { width: 29%; height: 49%; bottom: 0; right: 0; }
+
+/* hero section */
+
+.hero-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 20px;
+    padding: 80px 5% 0 5%; 
+    box-sizing: border-box;
+}
+
+.hero-section h1{
+    color: var(--white-color);
+    font-family: "Cal Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 76.188px; /* 79.363% */
+    letter-spacing: 0.72px;
+    text-align: left;
+}
+
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;   /* stack text and image */
+        justify-content: flex-start;
+        height: auto;             /* shrink to content */
+        padding: 200px 5% 0 5%;
+    }
+
+}

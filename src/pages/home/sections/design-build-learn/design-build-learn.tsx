@@ -1,7 +1,6 @@
 import "@/pages/home/home.css";
 import "@/pages/home/sections/design-build-learn/design-build-learn.css";
-import dbl_left from "@/assets/home/dbl-left.jpg";
-import dbl_right from "@/assets/home/dbl-right.jpg";
+import {dbl_left, dbl_right} from "@/assets/home";
 
 function DesignBuildLearnSection() {
   return (

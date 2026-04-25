@@ -1,5 +1,12 @@
+import { HeroSection, DesignSection} from "./sections";
+
 function AboutPage() {
-  return <div>About</div>;
+    return (
+        <div>
+            <HeroSection />
+            <DesignSection />
+        </div>
+    );
 }
 
 export default AboutPage;

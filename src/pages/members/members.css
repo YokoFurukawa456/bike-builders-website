@@ -1,0 +1,38 @@
+.member-grid {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;                /* rows butt up, spacing handled per-row */
+}
+ 
+.member-row {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 20px 0;
+}
+ 
+/* Rotated vertical label on the left */
+.row-label {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);    /* read bottom-to-top */
+    font-family: "Cal Sans";
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: .06em;
+    color: var(--white-color);
+    width: 48px;
+    flex-shrink: 0;
+    text-align: center;
+    padding-left: 24px;
+    user-select: none;
+}
+ 
+/* Cards container — left-aligned, grows right */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-left: 24px;
+}
